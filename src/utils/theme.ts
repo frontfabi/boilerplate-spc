@@ -6,6 +6,7 @@ import { darkGray } from './colors/darkGray'
 import { blue } from './colors/blue'
 import { yellow } from './colors/yellow'
 import { red } from './colors/red'
+
 const theme = {
   color: {
     blue,
@@ -31,5 +32,8 @@ const theme = {
   }
 }
 
-
-export default theme
+export type StandardType = typeof theme
+const Standard: StandardType = {
+  ...theme
+}
+export default Standard

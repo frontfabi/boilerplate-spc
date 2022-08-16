@@ -4,15 +4,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import GlobalStyle from './utils/globalStyle';
 import { ThemeProvider } from 'styled-components';
-import theme from './utils/theme';
+import Standard from './utils/theme';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-console.log(theme)
+console.log(Standard)
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={Standard}>
       <GlobalStyle />
       <App />
     </ThemeProvider>

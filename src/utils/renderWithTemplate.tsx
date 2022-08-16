@@ -1,8 +1,9 @@
-import * as React from 'react'
 import { render } from '@testing-library/react'
+import * as React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import theme from 'utils/theme'
+import GlobalStyle from './globalStyle'
 type RenderOptions = {
   themeObj?: object
 }
@@ -20,6 +21,7 @@ const renderWithTheme = (
     
     return (
       <ThemeProvider theme={themeObj}>
+        <GlobalStyle />
           <Router>
             {children}
           </Router>
@@ -28,5 +30,4 @@ const renderWithTheme = (
 
   return render(ui, {wrapper: ThemeWrapper, ...options})
 }
-
 export { renderWithTheme }
