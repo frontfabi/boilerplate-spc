@@ -4,10 +4,10 @@ import {StandardType} from './theme';
 const GlobalStyle = createGlobalStyle<{ theme: StandardType}>`
   ${({ theme }) => css`
     body {
+      font-family: 'Montserrat';
       margin: 0;
       padding: 0;
-      background: ${theme.color.white.FFFFFF};
-      font-family: Open-Sans, Helvetica, Sans-Serif;
+      background: ${theme.color.white['F2F2F2']};
     }
   `}
 `;

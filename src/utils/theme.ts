@@ -19,16 +19,20 @@ const theme = {
     yellow,
   },
   font: {
-    size: {
-      h1: 58.59,
-      h2: 46.88,
-      h3: 37.5,
-      h4: 24,
-      p: 20,
-      s: 16,
-    },
+    size: [16, 20, 24, 37.5, 46.88, 58.59],
     weight: [300, 400, 500, 600, 700],
-    lineHeight: [29, 36, 46, 57, 71]
+    lineHeight: [29, 36, 46, 57, 71],
+    color: {
+      text: darkGray['494E58'],
+      title: darkGray['2B2F38'],
+      success: green['00B912'],
+      inputDefault: neutral['586682'],
+      buttonLabel: white['FFFFFF'],
+      link: blue['1F3C75']  
+    }
+  },
+  button: {
+    primary: {}
   }
 }
 

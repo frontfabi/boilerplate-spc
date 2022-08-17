@@ -1,16 +1,16 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { {{pascalCase name}} } from 'components';
+import { Button } from 'components';
 
 export default {
-  title: '{{pascalCase name}}',
-  component: {{pascalCase name}},
+  title: 'Button',
+  component: Button,
   argTypes: {
     children: { control: 'text' },
   },
-} as ComponentMeta<typeof {{pascalCase name}}>;
+} as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof {{pascalCase name}}> = (args) => <{{pascalCase name}} {...args} />;
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Component = Template.bind({});
 
