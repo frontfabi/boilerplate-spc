@@ -5,8 +5,8 @@ export type StatusType = 'default' | 'primary' | 'secondary' | 'alternative'
 
 export type ButtonProps = {
   children: ReactNode | JSX.Element
-  btnStyle: StyleType
-  btnStatus: StatusType
+  btnStyle?: StyleType
+  btnStatus?: StatusType
   disabled?: boolean
   onClick: () => void
 }

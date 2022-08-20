@@ -4,15 +4,20 @@ import { ButtonProps } from "types"
 const BtnNormal = css<ButtonProps>`
   ${({ theme, btnStatus, btnStyle }) => (btnStyle === 'normal' || !btnStyle) && `
     background: ${theme.button[btnStatus].bg};
-    color: ${theme.button[btnStatus].text};
+
+    p {
+      color: ${theme.button[btnStatus].text};
+    }
   `}
 `
 
 const BtnOutline = css<ButtonProps>`
   ${({ theme, btnStatus, btnStyle }) => btnStyle === 'outline' && `
     background: transparent;
-    color: ${theme.button[btnStatus].bg};
     border-color: ${theme.button[btnStatus].border};
+    p {
+      color: ${theme.button[btnStatus].bg};
+    }
   `}
 `
 
