@@ -17,17 +17,17 @@ module.exports = plop => {
         // Add a new file
         type: 'add',
         // Path for the new file
-        path: 'src/components/{{pascalCase name}}/index.jsx',
+        path: 'src/components/{{pascalCase name}}/index.tsx',
         // Handlebars template used to generate content of new file
-        templateFile: 'plop-templates/ComponentIndex.jsx.hbs',
+        templateFile: 'plop-templates/ComponentIndex.tsx.hbs',
       },
       {
         // Add a new file
         type: 'add',
         // Path for the new file
-        path: 'src/components/{{pascalCase name}}/styles.js',
+        path: 'src/components/{{pascalCase name}}/styles.ts',
         // Handlebars template used to generate content of new file
-        templateFile: 'plop-templates/ComponentStyles.js.hbs',
+        templateFile: 'plop-templates/ComponentStyles.ts.hbs',
       },
       {
         // Add a new file
@@ -44,6 +44,22 @@ module.exports = plop => {
         path: 'src/components/{{pascalCase name}}/stories.tsx',
         // Handlebars template used to generate content of new file
         templateFile: 'plop-templates/ComponentStories.tsx.hbs',
+      },
+      {
+        // Add a new file
+        type: 'add',
+        // Path for the new file
+        path: 'src/types/{{pascalCase name}}.types.ts',
+        // Handlebars template used to generate content of new file
+        templateFile: 'plop-templates/ComponentTypes.ts.hbs',
+      },
+      {
+        // Add a new file
+        type: 'append',
+        // Path for the new file
+        path: 'src/types/index.ts',
+        // Handlebars template used to generate content of new file
+        templateFile: 'plop-templates/ExportType.txt.hbs',
       },
       {
         // Add a new file

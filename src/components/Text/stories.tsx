@@ -1,6 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { Text } from 'components';
+import Standard from 'utils/theme';
 
 //👇 This default export determines where your story goes in the story list
 export default {
@@ -13,14 +14,13 @@ export default {
   argTypes: {
     children: { control: 'text' },
     tag: { control: 'select', options: ['span', 'p', 'h2', 'h3', 'h4', 'h5', 'strong']},
-    color: { control: 'select', options: ['text', 'title']},
-    size: { control: 'select', options: [0,1,2,3,4,5]},
-    lineHeight: { control: 'select', options: [0,1,2,3,4]},
-    weight: { control: 'select', options: [0,1,2,3,4]}
+    color: { control: 'select', options: Object.keys(Standard.font.color)},
+    size: { control: 'select', options: Standard.font.size.map((item, index) => index)},
+    lineHeight: { control: 'select', options: Standard.font.lineHeight.map((item, index) => index)},
+    weight: { control: 'select', options: Standard.font.weight.map((item, index) => index)}
   },
 } as ComponentMeta<typeof Text>;
 
-//👇 We create a “template” of how args map to rendering
 const Template: ComponentStory<typeof Text> = (args) => <Text {...args} />;
 
 export const Component = Template.bind({});

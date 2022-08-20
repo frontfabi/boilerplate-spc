@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-
+import Standard from 'utils/theme';
 import { Button } from 'components';
 
 export default {
@@ -7,6 +7,8 @@ export default {
   component: Button,
   argTypes: {
     children: { control: 'text' },
+    btnStatus: { control: 'select', options: Object.keys(Standard.button)},
+    btnStyle: { control: 'select', options: ['normal', 'outline', 'link']},
   },
 } as ComponentMeta<typeof Button>;
 
