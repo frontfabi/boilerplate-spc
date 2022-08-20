@@ -6,33 +6,33 @@ import { ModalClose, ModalContent, ModalFooter, ModalHeader, ModalWindow, Styled
 
 const Modal = ({
   children,
-  isOpen = true,
+  isOpen = false,
   primaryActionButton,
   secondaryActionButton,
   title,
 }: ModalProps) => {
   const [statusModal, setStatusModal] = useState(isOpen)
 
-  const handleClose = (isActive: boolean) => {
-    setStatusModal(isActive);
+  const handleClose = () => {
+    setStatusModal(false);
   }
 
   const handlePrimaryAction = () => {
     primaryActionButton?.action && primaryActionButton?.action();
-    handleClose(!statusModal)
+    handleClose()
   }
 
   const handleSecondaryAction = () => {
     secondaryActionButton?.action && secondaryActionButton?.action();
-    handleClose(!statusModal)
+    handleClose()
   }
 
-  return statusModal && (
+  return statusModal ? (
     <StyledModal>
       <ModalWindow>
         <ModalHeader>
           <Text size={1} weight={3}>{title}</Text>
-          <ModalClose role="button" onClick={() => handleClose(!statusModal)} />
+          <ModalClose role="button" onClick={handleClose} />
         </ModalHeader>
         <ModalContent>
           {children}
@@ -43,7 +43,7 @@ const Modal = ({
         </ModalFooter>
       </ModalWindow>
     </StyledModal>
-  );
+  ): <></>;
 };
 
 export { Modal };

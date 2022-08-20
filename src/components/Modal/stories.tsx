@@ -17,6 +17,7 @@ export const Component = Template.bind({});
 Component.args = {
   title: 'Modal title',
   children: 'Modal content',
+  isOpen: true,
   primaryActionButton: {
     action: () => console.log('Confirmou')
   },

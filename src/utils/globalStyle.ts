@@ -8,6 +8,11 @@ const GlobalStyle = createGlobalStyle<{ theme: StandardType}>`
       margin: 0;
       padding: 0;
       background: ${theme.color.white['F2F2F2']};
+
+      [disabled] {
+        opacity: .55;
+        cursor: not-allowed;
+      }
     }
   `}
 `;

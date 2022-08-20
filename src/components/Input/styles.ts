@@ -23,20 +23,11 @@ export const StyledInput = styled.input<{status: FieldStatusType}>`
 `
 
 export const Wrapper = styled.div<{status: FieldStatusType, disabled?: boolean}>`
-  ${({ theme, status, disabled }) => `
+  ${({ theme, status }) => `
     height: 62px;
     max-height: 62px;
     width: 100%;
-    color: ${theme.font.color[status]};
-   
-
-    ${disabled && `
-      opacity: .45;
-      [disabled] {
-        cursor: not-allowed;
-      }
-    `}
-    
+    color: ${theme.font.color[status]};    
   `}
 `
 
