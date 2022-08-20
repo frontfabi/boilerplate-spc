@@ -1,8 +1,8 @@
 import { ReactNode } from "react"
-
+import { FieldStatusType } from "./FormField.types"
 export type TagType = 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'span' | 'strong'
 
-export type FontColorType = 'text' | 'title' | 'success' | 'default' | 'buttonLabel' | 'link' | 'danger'
+export type FontColorType = FieldStatusType | 'text' | 'title' | 'buttonLabel' | 'link' 
 
 export type LineHeightType = 0 | 1 | 2 | 3 | 4
 export type WeightType = 0 | 1 | 2 | 3 | 4

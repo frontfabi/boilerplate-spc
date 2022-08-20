@@ -17,6 +17,12 @@ const theme = {
     red,
     white,
     yellow,
+    status: {
+      default: neutral['586682'],
+      success: green['00B912'],
+      warning: yellow['FFBC29'],
+      error: red['B90000'],
+    }
   },
   font: {
     size: [16, 20, 24, 37.5, 46.88, 58.59],
@@ -26,7 +32,8 @@ const theme = {
       text: darkGray['494E58'],
       title: darkGray['2B2F38'],
       success: green['00B912'],
-      danger: red['B90000'],
+      warning: yellow['FFBC29'],
+      error: red['B90000'],
       default: neutral['586682'],
       buttonLabel: white['FFFFFF'],
       link: blue['1F3C75']  
