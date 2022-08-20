@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 
-export type {{pascalCase name}}Props = {
+export type ContainerProps = {
   children: ReactNode | JSX.Element
+  fluid?: boolean
 }
