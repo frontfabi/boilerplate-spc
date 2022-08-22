@@ -26,7 +26,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest --colors --coverage",
+    "test": "jest --colors",
     "eject": "react-scripts eject",
     "gen": "plop",
     "sb": "start-storybook -p 6006 -s public",

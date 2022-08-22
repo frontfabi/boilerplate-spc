@@ -14,5 +14,5 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 export const Component = Template.bind({});
 
 Component.args = {
-  children: 'The args you need here will depend on your component'
+  children: 'Entrar'
 };

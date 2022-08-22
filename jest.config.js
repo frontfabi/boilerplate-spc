@@ -2,11 +2,11 @@ module.exports = {
   preset: 'ts-jest/presets/js-with-ts',
   testEnvironment: "jsdom",
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*test.{js,jsx,ts,tsx}'],
+  collectCoverageFrom: ["src/**/*.{js,jsx,ts,tsx}"],
   coverageThreshold: {
-    global: {
-			statements: 100,
-			lines: 100
+    "global": {
+      "lines": 90,
+      "statements": 90
     }
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
