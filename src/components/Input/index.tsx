@@ -1,4 +1,4 @@
-import { FormField } from 'components/FormField';
+import { FormField } from 'components';
 import { useState } from 'react';
 import { InputProps } from 'types';
 import { InputField, StyledInput, Wrapper } from './styles';

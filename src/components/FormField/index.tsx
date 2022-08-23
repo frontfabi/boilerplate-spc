@@ -1,6 +1,7 @@
 import { Text } from 'components';
 import { FormFieldProps } from 'types/FormField.types';
 import { StyledFormField } from './styles';
+
 const FormField = ({ children, label, status = 'default', helperText }: FormFieldProps) => {
   return (
     <StyledFormField>

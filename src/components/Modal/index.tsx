@@ -1,5 +1,5 @@
-import { Button } from 'components/Button';
-import { Text } from 'components/Text';
+import { Button } from 'components';
+import { Text } from 'components';
 import { useState } from 'react';
 import { ModalProps } from 'types';
 import { ModalClose, ModalContent, ModalFooter, ModalHeader, ModalWindow, StyledModal } from './styles';

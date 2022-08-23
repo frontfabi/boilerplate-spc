@@ -1,4 +1,4 @@
-import { Text } from 'components/Text';
+import { Text } from 'components';
 import { ButtonProps } from 'types';
 import { StyledButton } from './styles';
 
