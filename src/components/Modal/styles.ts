@@ -1,13 +1,13 @@
-import { BsX } from "react-icons/bs";
-import styled from "styled-components";
+import {BsX} from 'react-icons/bs';
+import styled from 'styled-components';
 
 export const StyledModal = styled.div`
-  ${({ theme }) => `
+  ${({theme}) => `
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: ${theme.color.darkGray["2B2F38"]}80;
+    background: ${theme.color.darkGray['2B2F38']}80;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -19,12 +19,12 @@ export const StyledModal = styled.div`
 `;
 
 export const ModalWindow = styled.div`
-  ${({ theme }) => `
+  ${({theme}) => `
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: ${theme.color.white["FFFFFF"]};
+    background: ${theme.color.white.FFFFFF};
     width: 616px;
     min-height: 120px;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
@@ -33,7 +33,7 @@ export const ModalWindow = styled.div`
 `;
 
 export const ModalHeader = styled.div`
-  ${({ theme }) => `
+  ${({theme}) => `
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,9 +44,9 @@ export const ModalHeader = styled.div`
 `;
 
 export const ModalFooter = styled.div`
-  ${({ theme }) => `
+  ${({theme}) => `
     align-items: center;
-    background: ${theme.color.white["FFFFFF"]};
+    background: ${theme.color.white.FFFFFF};
     bottom: 0;
     display: flex;
     justify-content: flex-end;
@@ -64,10 +64,10 @@ export const ModalContent = styled.div`
   padding-bottom: 24px;
 `;
 export const ModalClose = styled(BsX)`
-  ${({ theme }) => `
+  ${({theme}) => `
     width: 24px;
     height: 24px;
-    color: ${theme.color.neutral["8094BC"]};
+    color: ${theme.color.neutral['8094BC']};
     cursor: pointer;
   `}
 `;

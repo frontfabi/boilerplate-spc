@@ -1,7 +1,8 @@
 // import * as Logo from 'assets/images/logo_spcbrasil.png';
-import { AvatarDropdown, Container } from "components";
-import { useState } from "react";
-import { HeaderProps } from "types";
+import logo from 'assets/images/logo_spcbrasil.png';
+import {AvatarDropdown, Container} from 'components';
+import {useState} from 'react';
+import {HeaderProps} from 'types';
 
 import {
   AccountContainer,
@@ -10,10 +11,9 @@ import {
   SearchContainer,
   SearchIcon,
   StyledHeader,
-} from "./styles";
-const Header = ({ loggedIn, username, cpf }: HeaderProps) => {
-  const [searchValue, setSearchValue] = useState("");
-  const logo = require("assets/images/logo_spcbrasil.png");
+} from './styles';
+const Header = ({loggedIn, username, cpf}: HeaderProps) => {
+  const [searchValue, setSearchValue] = useState('');
 
   return (
     <>
@@ -40,8 +40,8 @@ const Header = ({ loggedIn, username, cpf }: HeaderProps) => {
                 </SearchContainer>
                 <AccountContainer>
                   <AvatarDropdown
-                    title={username ?? "Convidado"}
-                    subtitle={cpf ?? " "}
+                    title={username ?? 'Convidado'}
+                    subtitle={cpf ?? ' '}
                     menu={[]}
                   />
                 </AccountContainer>
@@ -54,4 +54,5 @@ const Header = ({ loggedIn, username, cpf }: HeaderProps) => {
   );
 };
 
-export { Header };
+export {Header};
+

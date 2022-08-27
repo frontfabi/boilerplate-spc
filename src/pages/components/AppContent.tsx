@@ -1,6 +1,6 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import {BrowserRouter as Router} from 'react-router-dom';
 
-import AppRoutes from "./AppRoutes";
+import AppRoutes from './AppRoutes';
 
 const AppContent = () => {
   return (
@@ -15,4 +15,4 @@ const AppContent = () => {
   );
 };
 
-export { AppContent };
+export {AppContent};

@@ -1,12 +1,12 @@
-import { ReactNode } from "react";
+import {ReactNode} from 'react';
 
-type DropdownMenu = {
-  url: string;
-  label: string;
-};
+interface DropdownMenu {
+  url: string
+  label: string
+}
 
-export type AvatarDropdownProps = {
-  title: string;
-  subtitle: string;
-  menu?: DropdownMenu[];
-};
+export interface AvatarDropdownProps {
+  title: string
+  subtitle: string
+  menu?: DropdownMenu[]
+}

@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
+import {ReactNode} from 'react';
 
-export type GridProps = {
-  children: ReactNode | JSX.Element;
-};
+export interface GridProps {
+  children: ReactNode | JSX.Element
+}

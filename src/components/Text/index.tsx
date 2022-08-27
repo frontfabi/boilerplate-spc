@@ -1,11 +1,11 @@
-import type { TextProps } from "types";
+import type {TextProps} from 'types';
 
-import { StyledText } from "./styles";
+import {StyledText} from './styles';
 
 const Text = ({
   children,
-  tag = "p",
-  color = "default",
+  tag = 'p',
+  color = 'default',
   size = 0,
   lineHeight = 0,
   weight = 1,
@@ -23,4 +23,4 @@ const Text = ({
   );
 };
 
-export { Text };
+export {Text};

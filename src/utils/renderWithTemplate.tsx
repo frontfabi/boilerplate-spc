@@ -1,25 +1,25 @@
-import { render } from "@testing-library/react";
-import * as React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import { ThemeProvider } from "styled-components";
-import theme from "utils/theme";
+import {render} from '@testing-library/react';
+import * as React from 'react';
+import {BrowserRouter as Router} from 'react-router-dom';
+import {ThemeProvider} from 'styled-components';
+import theme from 'utils/theme';
 
-import GlobalStyle from "./globalStyle";
+import GlobalStyle from './globalStyle';
 
-type RenderOptions = {
-  themeObj?: object;
-};
+interface RenderOptions {
+  themeObj?: object
+}
 
-type ThemeWrapperProps = {
-  children: React.ReactElement<any>;
-};
+interface ThemeWrapperProps {
+  children: React.ReactElement<any>
+}
 
 const renderWithTheme = (
-  ui: React.ReactElement<any>,
-  renderOptions: RenderOptions = {}
+    ui: React.ReactElement<any>,
+    renderOptions: RenderOptions = {},
 ) => {
-  const { themeObj = theme, ...options } = renderOptions;
-  const ThemeWrapper: React.FC<any> = ({ children }: ThemeWrapperProps) => {
+  const {themeObj = theme, ...options} = renderOptions;
+  const ThemeWrapper: React.FC<any> = ({children}: ThemeWrapperProps) => {
     return (
       <ThemeProvider theme={themeObj}>
         <GlobalStyle />
@@ -28,6 +28,6 @@ const renderWithTheme = (
     );
   };
 
-  return render(ui, { wrapper: ThemeWrapper, ...options });
+  return render(ui, {wrapper: ThemeWrapper, ...options});
 };
-export { renderWithTheme };
+export {renderWithTheme};

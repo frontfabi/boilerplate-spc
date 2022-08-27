@@ -1,10 +1,10 @@
-import { FormField } from "components";
-import { useState } from "react";
-import { AiOutlineWarning } from "react-icons/ai";
-import { BsCheck2, BsX } from "react-icons/bs";
-import { InputProps } from "types";
+import {FormField} from 'components';
+import {useState} from 'react';
+import {AiOutlineWarning} from 'react-icons/ai';
+import {BsCheck2, BsX} from 'react-icons/bs';
+import {InputProps} from 'types';
 
-import { InputField, StyledInput, Wrapper } from "./styles";
+import {InputField, StyledInput, Wrapper} from './styles';
 
 const Input = ({
   disabled,
@@ -16,30 +16,30 @@ const Input = ({
   onChange,
   onFocus,
   placeholder,
-  status = "default",
+  status = 'default',
   value,
 }: InputProps) => {
   const [inputValue, setInputValue] = useState(value);
 
   const handleChange = (value: string) => {
-    setInputValue(value);
-    onChange && onChange();
+    setInputValue(value)
+    ;(onChange != null) && onChange();
   };
   const showIcon =
     hasStatusIcon &&
-    (status === "error" || status === "success" || status === "warning");
+    (status === 'error' || status === 'success' || status === 'warning');
   const StatusIcon =
-    status === "success"
-      ? BsCheck2
-      : status === "warning"
-      ? AiOutlineWarning
-      : BsX;
+    status === 'success' ?
+      BsCheck2 :
+      status === 'warning' ?
+        AiOutlineWarning :
+        BsX;
   return (
     <Wrapper status={status} disabled={disabled}>
       <FormField label={label} status={status} helperText={helperText}>
         <InputField status={status} disabled={disabled}>
           <StyledInput
-            type={hasPassword ? "password" : "text"}
+            type={hasPassword ? 'password' : 'text'}
             id={id}
             disabled={disabled}
             placeholder={placeholder}
@@ -55,4 +55,4 @@ const Input = ({
   );
 };
 
-export { Input };
+export {Input};

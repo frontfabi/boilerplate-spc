@@ -1,11 +1,11 @@
-import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { Container } from "components";
+import {ComponentMeta, ComponentStory} from '@storybook/react';
+import {Container} from 'components';
 
 export default {
-  title: "Container",
+  title: 'Container',
   component: Container,
   argTypes: {
-    children: { control: "text" },
+    children: {control: 'text'},
   },
 } as ComponentMeta<typeof Container>;
 
@@ -16,6 +16,6 @@ const Template: ComponentStory<typeof Container> = (args) => (
 export const Component = Template.bind({});
 
 Component.args = {
-  children: "The args you need here will depend on your component",
+  children: 'The args you need here will depend on your component',
   fluid: true,
 };

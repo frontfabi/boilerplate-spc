@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const StyledGrid = styled.div`
   display: grid;
@@ -16,4 +16,4 @@ const StyledGrid = styled.div`
   }
 `;
 
-export { StyledGrid };
+export {StyledGrid};

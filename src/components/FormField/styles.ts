@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const StyledFormField = styled.label`
   position: relative;
@@ -13,4 +13,4 @@ const StyledFormField = styled.label`
   }
 `;
 
-export { StyledFormField };
+export {StyledFormField};

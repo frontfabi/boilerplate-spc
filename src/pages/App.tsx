@@ -1,4 +1,4 @@
-import { AppContent } from "./components/AppContent";
+import {AppContent} from './components/AppContent';
 
 const App = () => {
   return <AppContent />;

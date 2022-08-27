@@ -1,15 +1,15 @@
-import "@testing-library/jest-dom/extend-expect";
-import { screen } from "@testing-library/react";
-import { renderWithTheme } from "utils/renderWithTemplate";
-import Standard from "utils/theme";
+import '@testing-library/jest-dom/extend-expect';
+import {screen} from '@testing-library/react';
+import {renderWithTheme} from 'utils/renderWithTemplate';
+import Standard from 'utils/theme';
 
-import { Text } from ".";
+import {Text} from '.';
 
-describe("<Text />", () => {
-  it("should mount", () => {
+describe('<Text />', () => {
+  it('should mount', () => {
     renderWithTheme(<Text>Lorem ipsum</Text>);
 
-    const textContent = screen.getByText("Lorem ipsum");
+    const textContent = screen.getByText('Lorem ipsum');
 
     expect(textContent).toBeInTheDocument();
   });

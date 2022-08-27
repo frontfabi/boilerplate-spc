@@ -1,6 +1,6 @@
-import { Button, Text } from "components";
-import { useState } from "react";
-import { ModalProps } from "types";
+import {Button, Text} from 'components';
+import {useState} from 'react';
+import {ModalProps} from 'types';
 
 import {
   ModalClose,
@@ -9,7 +9,7 @@ import {
   ModalHeader,
   ModalWindow,
   StyledModal,
-} from "./styles";
+} from './styles';
 
 const Modal = ({
   children,
@@ -25,16 +25,17 @@ const Modal = ({
   };
 
   const handlePrimaryAction = () => {
-    primaryActionButton?.action && primaryActionButton?.action();
+    ((primaryActionButton?.action) != null) && primaryActionButton?.action();
     handleClose();
   };
 
   const handleSecondaryAction = () => {
-    secondaryActionButton?.action && secondaryActionButton?.action();
+    ((secondaryActionButton?.action) != null) && secondaryActionButton?.action();
     handleClose();
   };
 
-  return statusModal ? (
+  return statusModal ?
+      (
     <StyledModal>
       <ModalWindow>
         <ModalHeader>
@@ -45,22 +46,23 @@ const Modal = ({
         </ModalHeader>
         <ModalContent>{children}</ModalContent>
         <ModalFooter>
-          {primaryActionButton?.action && (
+          {((primaryActionButton?.action) != null) && (
             <Button onClick={handlePrimaryAction}>
-              {primaryActionButton?.label ?? "Confirmar"}
+              {primaryActionButton?.label ?? 'Confirmar'}
             </Button>
           )}
-          {secondaryActionButton?.action && (
+          {((secondaryActionButton?.action) != null) && (
             <Button btnStyle="outline" onClick={handleSecondaryAction}>
-              {secondaryActionButton?.label ?? "Cancelar"}
+              {secondaryActionButton?.label ?? 'Cancelar'}
             </Button>
           )}
         </ModalFooter>
       </ModalWindow>
     </StyledModal>
-  ) : (
+      ) :
+      (
     <></>
-  );
+      );
 };
 
-export { Modal };
+export {Modal};

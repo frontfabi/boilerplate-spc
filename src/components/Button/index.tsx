@@ -1,12 +1,12 @@
-import { Text } from "components";
-import { ButtonProps } from "types";
+import {Text} from 'components';
+import {ButtonProps} from 'types';
 
-import { StyledButton } from "./styles";
+import {StyledButton} from './styles';
 
 const Button = ({
   children,
-  btnStyle = "normal",
-  btnStatus = "default",
+  btnStyle = 'normal',
+  btnStatus = 'default',
   disabled,
   onClick,
   ...rest
@@ -26,4 +26,4 @@ const Button = ({
   );
 };
 
-export { Button };
+export {Button};

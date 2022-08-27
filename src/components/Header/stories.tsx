@@ -1,8 +1,8 @@
-import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { Header } from "components";
+import {ComponentMeta, ComponentStory} from '@storybook/react';
+import {Header} from 'components';
 
 export default {
-  title: "Header",
+  title: 'Header',
   component: Header,
 } as ComponentMeta<typeof Header>;
 
@@ -12,6 +12,6 @@ export const Component = Template.bind({});
 
 Component.args = {
   loggedIn: true,
-  username: "Paulo Gonçalves",
-  cpf: "764.235.853-14",
+  username: 'Paulo Gonçalves',
+  cpf: '764.235.853-14',
 };

@@ -1,17 +1,17 @@
-import { Text } from "components";
-import { NamedAvatarProps } from "types";
+import {Text} from 'components';
+import {NamedAvatarProps} from 'types';
 
-import { StyledNamedAvatar } from "./styles";
+import {StyledNamedAvatar} from './styles';
 
-const NamedAvatar = ({ name }: NamedAvatarProps) => {
-  const arrName = name.split(" ");
+const NamedAvatar = ({name}: NamedAvatarProps) => {
+  const arrName = name.split(' ');
   const getFirstChars = (arr: string[]) =>
     arr
-      .map((item, index) => {
-        if (index == 0 || index == arr.length - 1) return item.slice(0, 1);
-      })
-      .join("")
-      .toUpperCase();
+        .map((item, index) => {
+          if (index == 0 || index == arr.length - 1) return item.slice(0, 1);
+        })
+        .join('')
+        .toUpperCase();
 
   return (
     <StyledNamedAvatar>
@@ -20,4 +20,4 @@ const NamedAvatar = ({ name }: NamedAvatarProps) => {
   );
 };
 
-export { NamedAvatar };
+export {NamedAvatar};

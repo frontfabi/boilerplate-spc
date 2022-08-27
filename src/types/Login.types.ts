@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
+import {ReactNode} from 'react';
 
-export type LoginProps = {
-  children: ReactNode | JSX.Element;
-};
+export interface LoginProps {
+  children: ReactNode | JSX.Element
+}

@@ -1,8 +1,8 @@
-import { GoSearch } from "react-icons/go";
-import styled, { css } from "styled-components";
-import { HeaderProps } from "types";
+import {GoSearch} from 'react-icons/go';
+import styled, {css} from 'styled-components';
+import {HeaderProps} from 'types';
 
-import { darkGray } from "./../../utils/colors/darkGray";
+import {darkGray} from './../../utils/colors/darkGray';
 
 export const StyledHeader = styled.header<HeaderProps>`
   position: relative;
@@ -13,18 +13,18 @@ export const StyledHeader = styled.header<HeaderProps>`
   display: flex;
   align-items: center;
 
-  ${({ loggedIn, theme }) =>
+  ${({loggedIn, theme}) =>
     loggedIn &&
     css`
-      background: ${theme.color.white["FFFFFF"]};
-      border-color: ${theme.color.lightGray["E5E5E5"]};
+      background: ${theme.color.white.FFFFFF};
+      border-color: ${theme.color.lightGray.E5E5E5};
     `}
 `;
 
 export const LogoContainer = styled.div``;
 export const SearchContainer = styled.div`
-  ${({ theme }) => css`
-    background-color: ${theme.color.white["F3F8FE"]};
+  ${({theme}) => css`
+    background-color: ${theme.color.white.F3F8FE};
     width: 494px;
     height: 56px;
     border-radius: 16px;
@@ -46,8 +46,8 @@ export const SearchContainer = styled.div`
 `;
 
 export const SearchIcon = styled(GoSearch)`
-  ${({ theme }) => css`
-    color: ${theme.color.darkGray["4E5157"]};
+  ${({theme}) => css`
+    color: ${theme.color.darkGray['4E5157']};
     width: 20px;
     height: 20px;
     cursor: pointer;
