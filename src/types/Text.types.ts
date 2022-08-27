@@ -16,4 +16,5 @@ export interface TextProps {
   size?: SizeType
   lineHeight?: LineHeightType
   weight?: WeightType
+  id?: string
 }

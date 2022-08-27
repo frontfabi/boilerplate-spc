@@ -8,7 +8,7 @@ import {
   ModalFooter,
   ModalHeader,
   ModalWindow,
-  StyledModal,
+  StyledModal
 } from './styles';
 
 const Modal = ({
@@ -37,12 +37,12 @@ const Modal = ({
   return statusModal ?
       (
     <StyledModal>
-      <ModalWindow>
+      <ModalWindow role="dialog" aria-labelledby="modalTitle">
         <ModalHeader>
-          <Text size={1} weight={3}>
+          <Text id="modalTitle" size={1} weight={3}>
             {title}
           </Text>
-          <ModalClose role="button" onClick={handleClose} />
+          <ModalClose role="button" aria-label="Fechar modal" onClick={handleClose} />
         </ModalHeader>
         <ModalContent>{children}</ModalContent>
         <ModalFooter>

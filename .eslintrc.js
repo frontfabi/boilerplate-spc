@@ -3,7 +3,10 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['eslint:recommended', 'google'],
+  extends: [
+    'eslint:recommended',
+    'google',
+  ],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
@@ -31,13 +34,6 @@ module.exports = {
       'objectsInObjects': false,
       'arraysInObjects': false,
     }],
-    'import-helpers/order-imports': [
-      'error',
-      {
-        groups: ['/^react$/', 'module', ['/^~/', 'parent', 'sibling', 'index']],
-        alphabetize: { order: 'asc', ignoreCase: true },
-      },
-    ],
     'react/jsx-curly-newline': 'off',
   },
 };

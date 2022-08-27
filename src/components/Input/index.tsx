@@ -37,7 +37,7 @@ const Input = ({
   return (
     <Wrapper status={status} disabled={disabled}>
       <FormField label={label} status={status} helperText={helperText}>
-        <InputField status={status} disabled={disabled}>
+        <InputField status={status} disabled={disabled} role="group">
           <StyledInput
             type={hasPassword ? 'password' : 'text'}
             id={id}
@@ -47,8 +47,9 @@ const Input = ({
             onChange={(e) => handleChange(e.target.value)}
             onFocus={onFocus}
             status={status}
+            role="textbox"
           />
-          {showIcon && <StatusIcon />}
+          {showIcon && <StatusIcon role="img" aria-label={`Status: ${status}`} />}
         </InputField>
       </FormField>
     </Wrapper>
