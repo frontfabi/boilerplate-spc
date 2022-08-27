@@ -1,13 +1,13 @@
-import {ComponentMeta, ComponentStory} from '@storybook/react';
-import {FormField} from 'components';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { FormField } from 'components';
 
 export default {
   title: 'FormField',
   component: FormField,
   argTypes: {
-    children: {control: 'text'},
-    helperText: {control: 'text'},
-    label: {control: 'text'},
+    children: { control: 'text' },
+    helperText: { control: 'text' },
+    label: { control: 'text' },
   },
 } as ComponentMeta<typeof FormField>;
 

@@ -1,11 +1,11 @@
-import {ComponentMeta, ComponentStory} from '@storybook/react';
-import {Modal} from 'components';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Modal } from 'components';
 
 export default {
   title: 'Modal',
   component: Modal,
   argTypes: {
-    children: {control: 'text'},
+    children: { control: 'text' },
   },
 } as ComponentMeta<typeof Modal>;
 

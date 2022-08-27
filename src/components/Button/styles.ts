@@ -1,8 +1,8 @@
-import styled, {css} from 'styled-components';
-import {ButtonProps} from 'types';
+import styled, { css } from 'styled-components';
+import { ButtonProps } from 'types';
 
 const BtnNormal = css<ButtonProps>`
-  ${({theme, btnStatus = 'default', btnStyle}) =>
+  ${({ theme, btnStatus = 'default', btnStyle }) =>
     (btnStyle === 'normal' || !btnStyle) &&
     `
     background: ${theme.button[btnStatus].bg};
@@ -14,7 +14,7 @@ const BtnNormal = css<ButtonProps>`
 `;
 
 const BtnOutline = css<ButtonProps>`
-  ${({theme, btnStatus = 'default', btnStyle}) =>
+  ${({ theme, btnStatus = 'default', btnStyle }) =>
     btnStyle === 'outline' &&
     `
     background: transparent;
@@ -26,7 +26,7 @@ const BtnOutline = css<ButtonProps>`
 `;
 
 const BtnLink = css<ButtonProps>`
-  ${({theme, btnStatus = 'default', btnStyle}) =>
+  ${({ theme, btnStatus = 'default', btnStyle }) =>
     btnStyle === 'link' &&
     `
     background: transparent;
@@ -48,4 +48,4 @@ const StyledButton = styled.button<ButtonProps>`
   ${BtnLink}
 `;
 
-export {StyledButton};
+export { StyledButton };

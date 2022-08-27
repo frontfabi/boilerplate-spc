@@ -1,6 +1,6 @@
-import {NamedAvatar, Text} from 'components';
-import {useState} from 'react';
-import {AvatarDropdownProps} from 'types';
+import { NamedAvatar, Text } from 'components';
+import { useState } from 'react';
+import { AvatarDropdownProps } from 'types';
 
 import {
   Icon,
@@ -11,7 +11,7 @@ import {
   StyledAvatarDropdown,
 } from './styles';
 
-const AvatarDropdown = ({title, subtitle, menu}: AvatarDropdownProps) => {
+const AvatarDropdown = ({ title, subtitle, menu }: AvatarDropdownProps) => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -61,4 +61,4 @@ const AvatarDropdown = ({title, subtitle, menu}: AvatarDropdownProps) => {
   );
 };
 
-export {AvatarDropdown};
+export { AvatarDropdown };

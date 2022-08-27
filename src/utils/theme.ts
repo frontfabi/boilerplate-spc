@@ -1,11 +1,11 @@
-import {blue} from './colors/blue';
-import {darkGray} from './colors/darkGray';
-import {green} from './colors/green';
-import {lightGray} from './colors/lightGray';
-import {neutral} from './colors/neutral';
-import {red} from './colors/red';
-import {white} from './colors/white';
-import {yellow} from './colors/yellow';
+import { blue } from './colors/blue';
+import { darkGray } from './colors/darkGray';
+import { green } from './colors/green';
+import { lightGray } from './colors/lightGray';
+import { neutral } from './colors/neutral';
+import { red } from './colors/red';
+import { white } from './colors/white';
+import { yellow } from './colors/yellow';
 
 const theme = {
   color: {

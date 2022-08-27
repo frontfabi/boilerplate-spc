@@ -1,11 +1,11 @@
-import {ComponentMeta, ComponentStory} from '@storybook/react';
-import {Grid} from 'components';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Grid } from 'components';
 
 export default {
   title: 'Grid',
   component: Grid,
   argTypes: {
-    children: {control: 'text'},
+    children: { control: 'text' },
   },
 } as ComponentMeta<typeof Grid>;
 

@@ -4,7 +4,7 @@ const MAX_WIDTH_CONTAINER = 1264;
 const CONTAINER_PADDING = 96;
 
 const StyledContainer = styled('section')<{ fluid?: boolean }>`
-  ${({fluid}) => `box-sizing: border-box;
+  ${({ fluid }) => `box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     max-width: ${
@@ -21,4 +21,4 @@ const StyledContainer = styled('section')<{ fluid?: boolean }>`
       padding-right: ${fluid ? 0 : '10px'};
     }`}
 `;
-export {StyledContainer};
+export { StyledContainer };

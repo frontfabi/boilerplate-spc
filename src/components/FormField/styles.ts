@@ -13,4 +13,4 @@ const StyledFormField = styled.label`
   }
 `;
 
-export {StyledFormField};
+export { StyledFormField };

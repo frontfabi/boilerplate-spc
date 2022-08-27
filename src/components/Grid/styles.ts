@@ -16,4 +16,4 @@ const StyledGrid = styled.div`
   }
 `;
 
-export {StyledGrid};
+export { StyledGrid };

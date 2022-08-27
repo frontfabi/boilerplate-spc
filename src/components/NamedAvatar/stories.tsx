@@ -1,11 +1,11 @@
-import {ComponentMeta, ComponentStory} from '@storybook/react';
-import {NamedAvatar} from 'components';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { NamedAvatar } from 'components';
 
 export default {
   title: 'NamedAvatar',
   component: NamedAvatar,
   argTypes: {
-    children: {control: 'text'},
+    children: { control: 'text' },
   },
 } as ComponentMeta<typeof NamedAvatar>;
 

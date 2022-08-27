@@ -1,6 +1,6 @@
-import type {TextProps} from 'types';
+import type { TextProps } from 'types';
 
-import {StyledText} from './styles';
+import { StyledText } from './styles';
 
 const Text = ({
   children,
@@ -23,4 +23,4 @@ const Text = ({
   );
 };
 
-export {Text};
+export { Text };

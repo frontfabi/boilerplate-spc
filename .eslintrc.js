@@ -25,7 +25,19 @@ module.exports = {
   ],
   rules: {
     'require-jsdoc': 0,
-    'max-len': ['warn', {'code': 150}],
+    'max-len': ['warn', { 'code': 150 }],
     'no-var-requires': 0,
+    'object-curly-spacing': ['error', 'always', {
+      'objectsInObjects': false,
+      'arraysInObjects': false,
+    }],
+    'import-helpers/order-imports': [
+      'error',
+      {
+        groups: ['/^react$/', 'module', ['/^~/', 'parent', 'sibling', 'index']],
+        alphabetize: { order: 'asc', ignoreCase: true },
+      },
+    ],
+    'react/jsx-curly-newline': 'off',
   },
 };

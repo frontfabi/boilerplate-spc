@@ -1,8 +1,8 @@
-import {BsX} from 'react-icons/bs';
+import { BsX } from 'react-icons/bs';
 import styled from 'styled-components';
 
 export const StyledModal = styled.div`
-  ${({theme}) => `
+  ${({ theme }) => `
     position: absolute;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@ export const StyledModal = styled.div`
 `;
 
 export const ModalWindow = styled.div`
-  ${({theme}) => `
+  ${({ theme }) => `
     position: relative;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@ export const ModalWindow = styled.div`
 `;
 
 export const ModalHeader = styled.div`
-  ${({theme}) => `
+  ${({ theme }) => `
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +44,7 @@ export const ModalHeader = styled.div`
 `;
 
 export const ModalFooter = styled.div`
-  ${({theme}) => `
+  ${({ theme }) => `
     align-items: center;
     background: ${theme.color.white.FFFFFF};
     bottom: 0;
@@ -64,7 +64,7 @@ export const ModalContent = styled.div`
   padding-bottom: 24px;
 `;
 export const ModalClose = styled(BsX)`
-  ${({theme}) => `
+  ${({ theme }) => `
     width: 24px;
     height: 24px;
     color: ${theme.color.neutral['8094BC']};

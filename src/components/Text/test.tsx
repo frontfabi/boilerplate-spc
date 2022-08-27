@@ -1,9 +1,9 @@
 import '@testing-library/jest-dom/extend-expect';
-import {screen} from '@testing-library/react';
-import {renderWithTheme} from 'utils/renderWithTemplate';
+import { screen } from '@testing-library/react';
+import { renderWithTheme } from 'utils/renderWithTemplate';
 import Standard from 'utils/theme';
 
-import {Text} from '.';
+import { Text } from '.';
 
 describe('<Text />', () => {
   it('should mount', () => {

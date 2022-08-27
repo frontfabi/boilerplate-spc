@@ -1,9 +1,9 @@
-import {createGlobalStyle, css} from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 
-import {StandardType} from './theme';
+import { StandardType } from './theme';
 
 const GlobalStyle = createGlobalStyle<{ theme: StandardType }>`
-  ${({theme}) => css`
+  ${({ theme }) => css`
     body {
       font-family: "Montserrat";
       margin: 0 !important;

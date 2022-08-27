@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom/extend-expect';
-import {fireEvent, screen, within} from '@testing-library/react';
-import {renderWithTheme} from 'utils/renderWithTemplate';
+import { fireEvent, screen, within } from '@testing-library/react';
+import { renderWithTheme } from 'utils/renderWithTemplate';
 
-import {AvatarDropdown} from '.';
+import { AvatarDropdown } from '.';
 
 describe('<AvatarDropdown />', () => {
   it('should mount', () => {
@@ -50,7 +50,7 @@ describe('<AvatarDropdown />', () => {
         <AvatarDropdown
           title="Paulo Gonçalves"
           subtitle="764.235.853-14"
-          menu={[{url: '/', label: 'home'}]}
+          menu={[{ url: '/', label: 'home' }]}
         />,
     );
 
@@ -60,7 +60,7 @@ describe('<AvatarDropdown />', () => {
     const avatarMenu = screen.getByRole('menu');
     expect(avatarMenu).toBeInTheDocument();
 
-    const {getAllByRole} = within(avatarMenu);
+    const { getAllByRole } = within(avatarMenu);
     const items = getAllByRole('menuitem');
     expect(items.length).toBe(2);
   });

@@ -1,4 +1,4 @@
-import {FiChevronDown} from 'react-icons/fi';
+import { FiChevronDown } from 'react-icons/fi';
 import styled from 'styled-components';
 
 export const StyledAvatarDropdown = styled.div`
@@ -26,7 +26,7 @@ export const IconTitle = styled.div`
 
 export const Icon = styled(FiChevronDown)<{ isFlip?: boolean }>`
   width: 20px;
-  ${({isFlip}) => isFlip && 'transform: scaleY(-1);'}
+  ${({ isFlip }) => isFlip && 'transform: scaleY(-1);'}
 `;
 
 export const MenuList = styled.ul`
@@ -48,12 +48,12 @@ export const MenuItem = styled.li`
     cursor: pointer;
     :not(:last-child) {
       border-bottom: 1px solid
-        ${({theme}) => `${theme.color.lightGray.EAEAEA}`};
+        ${({ theme }) => `${theme.color.lightGray.EAEAEA}`};
     }
   }
 
   a {
     text-decoration: none;
-    ${({theme}) => `color: ${theme.font.color.default}`}
+    ${({ theme }) => `color: ${theme.font.color.default}`}
   }
 `;

@@ -1,7 +1,7 @@
-import {Text} from 'components';
-import {ButtonProps} from 'types';
+import { Text } from 'components';
+import { ButtonProps } from 'types';
 
-import {StyledButton} from './styles';
+import { StyledButton } from './styles';
 
 const Button = ({
   children,
@@ -26,4 +26,4 @@ const Button = ({
   );
 };
 
-export {Button};
+export { Button };

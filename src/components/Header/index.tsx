@@ -1,8 +1,8 @@
 // import * as Logo from 'assets/images/logo_spcbrasil.png';
 import logo from 'assets/images/logo_spcbrasil.png';
-import {AvatarDropdown, Container} from 'components';
-import {useState} from 'react';
-import {HeaderProps} from 'types';
+import { AvatarDropdown, Container } from 'components';
+import { useState } from 'react';
+import { HeaderProps } from 'types';
 
 import {
   AccountContainer,
@@ -12,7 +12,7 @@ import {
   SearchIcon,
   StyledHeader,
 } from './styles';
-const Header = ({loggedIn, username, cpf}: HeaderProps) => {
+const Header = ({ loggedIn, username, cpf }: HeaderProps) => {
   const [searchValue, setSearchValue] = useState('');
 
   return (
@@ -54,5 +54,5 @@ const Header = ({loggedIn, username, cpf}: HeaderProps) => {
   );
 };
 
-export {Header};
+export { Header };
 

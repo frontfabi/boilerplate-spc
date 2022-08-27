@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom/extend-expect';
-import {fireEvent, screen} from '@testing-library/react';
-import {renderWithTheme} from 'utils/renderWithTemplate';
+import { fireEvent, screen } from '@testing-library/react';
+import { renderWithTheme } from 'utils/renderWithTemplate';
 
-import {Button} from '.';
+import { Button } from '.';
 
 describe('<Button />', () => {
   it('should mount', () => {

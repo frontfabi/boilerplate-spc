@@ -1,10 +1,10 @@
-import {FormField} from 'components';
-import {useState} from 'react';
-import {AiOutlineWarning} from 'react-icons/ai';
-import {BsCheck2, BsX} from 'react-icons/bs';
-import {InputProps} from 'types';
+import { FormField } from 'components';
+import { useState } from 'react';
+import { AiOutlineWarning } from 'react-icons/ai';
+import { BsCheck2, BsX } from 'react-icons/bs';
+import { InputProps } from 'types';
 
-import {InputField, StyledInput, Wrapper} from './styles';
+import { InputField, StyledInput, Wrapper } from './styles';
 
 const Input = ({
   disabled,
@@ -55,4 +55,4 @@ const Input = ({
   );
 };
 
-export {Input};
+export { Input };

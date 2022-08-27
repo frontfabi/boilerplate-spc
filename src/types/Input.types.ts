@@ -1,6 +1,6 @@
-import {ReactNode} from 'react';
+import { ReactNode } from 'react';
 
-import {FormFieldProps} from './FormField.types';
+import { FormFieldProps } from './FormField.types';
 
 export type InputProps = FormFieldProps & {
   hasPassword?: boolean

@@ -1,6 +1,6 @@
-import {Button, Text} from 'components';
-import {useState} from 'react';
-import {ModalProps} from 'types';
+import { Button, Text } from 'components';
+import { useState } from 'react';
+import { ModalProps } from 'types';
 
 import {
   ModalClose,
@@ -65,4 +65,4 @@ const Modal = ({
       );
 };
 
-export {Modal};
+export { Modal };

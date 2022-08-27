@@ -1,9 +1,9 @@
-import {Text} from 'components';
-import {NamedAvatarProps} from 'types';
+import { Text } from 'components';
+import { NamedAvatarProps } from 'types';
 
-import {StyledNamedAvatar} from './styles';
+import { StyledNamedAvatar } from './styles';
 
-const NamedAvatar = ({name}: NamedAvatarProps) => {
+const NamedAvatar = ({ name }: NamedAvatarProps) => {
   const arrName = name.split(' ');
   const getFirstChars = (arr: string[]) =>
     arr
@@ -20,4 +20,4 @@ const NamedAvatar = ({name}: NamedAvatarProps) => {
   );
 };
 
-export {NamedAvatar};
+export { NamedAvatar };

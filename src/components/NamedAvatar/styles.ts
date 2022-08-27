@@ -1,6 +1,6 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 
-import {yellow} from './../../utils/colors/yellow';
+import { yellow } from './../../utils/colors/yellow';
 
 const StyledNamedAvatar = styled.div`
   position: relative;
@@ -11,7 +11,7 @@ const StyledNamedAvatar = styled.div`
   align-items: center;
   justify-content: center;
 
-  ${({theme}) => css`
+  ${({ theme }) => css`
     border: 1px solid ${theme.color.yellow.FFBF2E};
 
     p {
@@ -20,4 +20,4 @@ const StyledNamedAvatar = styled.div`
   `}
 `;
 
-export {StyledNamedAvatar};
+export { StyledNamedAvatar };

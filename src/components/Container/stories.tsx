@@ -1,11 +1,11 @@
-import {ComponentMeta, ComponentStory} from '@storybook/react';
-import {Container} from 'components';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Container } from 'components';
 
 export default {
   title: 'Container',
   component: Container,
   argTypes: {
-    children: {control: 'text'},
+    children: { control: 'text' },
   },
 } as ComponentMeta<typeof Container>;
 

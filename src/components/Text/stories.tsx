@@ -1,5 +1,5 @@
-import {ComponentMeta, ComponentStory} from '@storybook/react';
-import {Text} from 'components';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Text } from 'components';
 import Standard from 'utils/theme';
 
 // 👇 This default export determines where your story goes in the story list
@@ -11,12 +11,12 @@ export default {
   title: 'Text',
   component: Text,
   argTypes: {
-    children: {control: 'text'},
+    children: { control: 'text' },
     tag: {
       control: 'select',
       options: ['span', 'p', 'h2', 'h3', 'h4', 'h5', 'strong'],
     },
-    color: {control: 'select', options: Object.keys(Standard.font.color)},
+    color: { control: 'select', options: Object.keys(Standard.font.color) },
     size: {
       control: 'select',
       options: Standard.font.size.map((item, index) => index),

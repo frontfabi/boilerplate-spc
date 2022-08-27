@@ -1,12 +1,12 @@
-import {ComponentMeta, ComponentStory} from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import {Input} from '.';
+import { Input } from '.';
 
 export default {
   title: 'Input',
   component: Input,
   argTypes: {
-    children: {control: 'text'},
+    children: { control: 'text' },
   },
 } as ComponentMeta<typeof Input>;
 

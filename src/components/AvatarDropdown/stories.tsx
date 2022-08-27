@@ -1,5 +1,5 @@
-import {ComponentMeta, ComponentStory} from '@storybook/react';
-import {AvatarDropdown} from 'components';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { AvatarDropdown } from 'components';
 
 export default {
   title: 'AvatarDropdown',
@@ -15,5 +15,5 @@ export const Component = Template.bind({});
 Component.args = {
   title: 'Paulo Gonçalves',
   subtitle: '191.000.000-00',
-  menu: [{label: 'Sair', url: '/'}],
+  menu: [{ label: 'Sair', url: '/' }],
 };
