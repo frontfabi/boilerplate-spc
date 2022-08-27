@@ -1,7 +1,7 @@
-import styled from "styled-components"
-import { FieldStatusType } from 'types';
+import styled from "styled-components";
+import { FieldStatusType } from "types";
 
-export const StyledInput = styled.input<{status: FieldStatusType}>`
+export const StyledInput = styled.input<{ status: FieldStatusType }>`
   ${({ theme, status }) => `
     position: relative;
     width: calc(100% - 68px);
@@ -20,18 +20,24 @@ export const StyledInput = styled.input<{status: FieldStatusType}>`
   :focus {
     outline: transparent;
   }
-`
+`;
 
-export const Wrapper = styled.div<{status: FieldStatusType, disabled?: boolean}>`
+export const Wrapper = styled.div<{
+  status: FieldStatusType;
+  disabled?: boolean;
+}>`
   ${({ theme, status }) => `
     height: 62px;
     max-height: 62px;
     width: 100%;
     color: ${theme.font.color[status]};    
   `}
-`
+`;
 
-export const InputField = styled.div<{status: FieldStatusType, disabled?: boolean}>`
+export const InputField = styled.div<{
+  status: FieldStatusType;
+  disabled?: boolean;
+}>`
   ${({ theme, status, disabled }) => `
     background: white;
     border-radius: 4px;
@@ -47,4 +53,4 @@ export const InputField = styled.div<{status: FieldStatusType, disabled?: boolea
       height: 24px;
     }
   `}
-`
+`;

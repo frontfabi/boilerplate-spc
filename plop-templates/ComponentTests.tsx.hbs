@@ -8,10 +8,8 @@ describe('<{{pascalCase name}} />', () => {
   it('should mount', () => {
     renderWithTheme(<{{pascalCase name}}>Lorem ipsum</{{pascalCase name}}>);
     
-    const {{lowerCase name}} = screen.getByTestId('{{titleCase name}}Content');
     const {{lowerCase name}}Content = screen.getByText('Lorem ipsum')
 
-    expect({{lowerCase name}}).toBeInTheDocument();
     expect({{lowerCase name}}Content).toBeInTheDocument();
   });
 });

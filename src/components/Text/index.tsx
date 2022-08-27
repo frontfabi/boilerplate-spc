@@ -1,7 +1,15 @@
-import type { TextProps } from 'types';
-import { StyledText } from './styles';
+import type { TextProps } from "types";
 
-const Text = ({ children, tag = 'p', color = 'default', size = 0, lineHeight = 0, weight = 1 }: TextProps) => {
+import { StyledText } from "./styles";
+
+const Text = ({
+  children,
+  tag = "p",
+  color = "default",
+  size = 0,
+  lineHeight = 0,
+  weight = 1,
+}: TextProps) => {
   return (
     <StyledText
       as={tag}

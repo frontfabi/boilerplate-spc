@@ -1,9 +1,7 @@
 import { AppContent } from "./components/AppContent";
 
 const App = () => {
-  return (
-    <AppContent />
-  );
-}
+  return <AppContent />;
+};
 
-export default App
+export default App;

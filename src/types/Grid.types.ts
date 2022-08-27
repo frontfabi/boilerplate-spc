@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
 
 export type GridProps = {
-  children: ReactNode | JSX.Element
-}
+  children: ReactNode | JSX.Element;
+};

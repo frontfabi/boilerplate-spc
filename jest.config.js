@@ -1,12 +1,12 @@
 module.exports = {
   preset: 'ts-jest/presets/js-with-ts',
   testEnvironment: "jsdom",
-  collectCoverage: true,
-  collectCoverageFrom: ["src/**/*.{js,jsx,ts,tsx}"],
+  collectCoverage: false,
+  collectCoverageFrom: ["src/components/**/*.{js,jsx,ts,tsx}"],
   coverageThreshold: {
     "global": {
-      "lines": 90,
-      "statements": 90
+      "lines": 80,
+      "statements": 60
     }
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
@@ -16,7 +16,11 @@ module.exports = {
           tsconfig: '<rootDir>/tsconfig.json',
       },
   },
+  moduleNameMapper: {
+    "\\.(css)$": "identity-obj-proxy",
+    "\\.(jpg|jpeg|png)$": "identity-obj-proxy",
+  },
   transformIgnorePatterns: [
-      "node_modules/(?!troublesome-dependency/.*)",
+      "node_modules/(?!troublesome-dependency/.*)"
   ],
 }

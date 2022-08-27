@@ -1,41 +1,45 @@
-import { FormField } from 'components';
-import { useState } from 'react';
-import { InputProps } from 'types';
-import { InputField, StyledInput, Wrapper } from './styles';
-import { BsX, BsCheck2 } from 'react-icons/bs'
+import { FormField } from "components";
+import { useState } from "react";
 import { AiOutlineWarning } from "react-icons/ai";
+import { BsCheck2, BsX } from "react-icons/bs";
+import { InputProps } from "types";
 
-const Input = ({ 
-  disabled, 
+import { InputField, StyledInput, Wrapper } from "./styles";
+
+const Input = ({
+  disabled,
   hasPassword,
-  hasStatusIcon, 
-  helperText, 
-  id, 
-  label, 
-  onChange, 
-  onFocus, 
-  placeholder, 
-  status = 'default', 
-  value, 
+  hasStatusIcon,
+  helperText,
+  id,
+  label,
+  onChange,
+  onFocus,
+  placeholder,
+  status = "default",
+  value,
 }: InputProps) => {
-  const [inputValue, setInputValue] = useState(value)
+  const [inputValue, setInputValue] = useState(value);
 
   const handleChange = (value: string) => {
-    setInputValue(value)
-    onChange && onChange()
-  }
-  const showIcon = hasStatusIcon && (status === 'error' || status === 'success' || status === 'warning')
-  const StatusIcon = status === 'success' ? BsCheck2 : status === 'warning' ? AiOutlineWarning : BsX
-   return (
+    setInputValue(value);
+    onChange && onChange();
+  };
+  const showIcon =
+    hasStatusIcon &&
+    (status === "error" || status === "success" || status === "warning");
+  const StatusIcon =
+    status === "success"
+      ? BsCheck2
+      : status === "warning"
+      ? AiOutlineWarning
+      : BsX;
+  return (
     <Wrapper status={status} disabled={disabled}>
-      <FormField
-        label={label}
-        status={status}
-        helperText={helperText}
-      >
+      <FormField label={label} status={status} helperText={helperText}>
         <InputField status={status} disabled={disabled}>
           <StyledInput
-            type={hasPassword ? 'password' : 'text'}
+            type={hasPassword ? "password" : "text"}
             id={id}
             disabled={disabled}
             placeholder={placeholder}

@@ -1,6 +1,5 @@
-import styled, { css } from "styled-components"
-import type { TextProps } from "types"
-
+import styled, { css } from "styled-components";
+import type { TextProps } from "types";
 
 export const StyledText = styled.p<TextProps>`
   position: relative;
@@ -12,4 +11,4 @@ export const StyledText = styled.p<TextProps>`
     font-weight: ${theme.font.weight[weight ?? 0]};
     line-height: ${lineHeight ? `${theme.font.lineHeight[lineHeight]}px` : 1.2};
   `};
-`
+`;

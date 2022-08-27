@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Cadastro() {
-  return (
-    <div>Cadastro</div>
-  )
+  return <div>Cadastro</div>;
 }

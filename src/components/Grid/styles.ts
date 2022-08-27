@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const StyledGrid = styled.div`
   display: grid;
@@ -14,6 +14,6 @@ const StyledGrid = styled.div`
     grid-column-gap: 24px;
     grid-template-columns: repeat(12, 1fr);
   }
-`
+`;
 
-export { StyledGrid }
+export { StyledGrid };

@@ -1,12 +1,9 @@
-import { StyledContainer } from './styles';
-import { ContainerProps } from 'types'
+import { ContainerProps } from "types";
+
+import { StyledContainer } from "./styles";
 
 const Container = ({ children, fluid }: ContainerProps) => {
-  return (
-    <StyledContainer fluid={fluid}>
-      {children}
-    </StyledContainer>
-  );
+  return <StyledContainer fluid={fluid}>{children}</StyledContainer>;
 };
 
 export { Container };
