@@ -12,7 +12,7 @@ const menuItems = [
     icon: <AiOutlineHome />,
   },
   {
-    url: '/cadastro',
+    url: '/cadastro-positivo',
     label: 'Cadastro Positivo',
     icon: <FiPieChart />,
   },

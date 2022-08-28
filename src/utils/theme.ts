@@ -30,7 +30,7 @@ const theme = {
     lineHeight: [29, 36, 46, 57, 71],
     color: {
       text: darkGray['494E58'],
-      title: darkGray['2B2F38'],
+      title: darkGray['4E5157'],
       success: green['00B912'],
       warning: yellow.FFBC29,
       error: red.B90000,
