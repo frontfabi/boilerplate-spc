@@ -8,7 +8,7 @@ import {
   ModalFooter,
   ModalHeader,
   ModalWindow,
-  StyledModal
+  StyledModal,
 } from './styles';
 
 const Modal = ({

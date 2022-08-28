@@ -1,9 +1,7 @@
 import { GoSearch } from 'react-icons/go';
 import styled, { css } from 'styled-components';
 import { HeaderProps } from 'types';
-
-import { darkGray } from './../../utils/colors/darkGray';
-
+import { NavLink } from 'react-router-dom';
 export const StyledHeader = styled.header<HeaderProps>`
   position: relative;
   margin: 0;
@@ -74,4 +72,55 @@ export const GridHeader = styled.div`
   @media (min-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
   }
+`;
+
+export const StyledMenu = styled.nav`
+  ${({ theme }) => css`
+    background: ${theme.color.white['FFFFFF']};
+    height: 128px;
+
+    > * {
+      align-items: stretch;
+      height: 100%;
+    }
+  `}
+`;
+
+export const StyledNavList = styled.ul`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+`;
+
+export const StyledListItem = styled.li`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 46px;
+  width: 230px;
+
+  svg {
+    height: 32px;
+    width: 32px;
+    margin-right: 16px;
+    ${({ theme }) => `stroke: ${theme.color.blue['007BFF']};`}
+    &[fill="currentColor"] {
+      ${({ theme }) => `fill: ${theme.color.blue['007BFF']};`}
+    }
+  }
+`;
+
+export const StyledLinkItem = styled(NavLink)`
+  ${({ theme }) => `
+  
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+    &.active {
+      border-bottom-color: ${theme.color.blue['007BFF']};
+    }
+  `}
 `;

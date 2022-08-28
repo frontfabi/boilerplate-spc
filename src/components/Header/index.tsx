@@ -1,6 +1,5 @@
 // import * as Logo from 'assets/images/logo_spcbrasil.png';
-import logo from 'assets/images/logo_spcbrasil.png';
-import { AvatarDropdown, Container } from 'components';
+import { AvatarDropdown, Container, Text } from 'components';
 import { useState } from 'react';
 import { HeaderProps } from 'types';
 
@@ -10,9 +9,10 @@ import {
   LogoContainer,
   SearchContainer,
   SearchIcon,
-  StyledHeader,
+  StyledHeader, StyledLinkItem, StyledListItem, StyledMenu,
+  StyledNavList,
 } from './styles';
-const Header = ({ loggedIn, username, cpf }: HeaderProps) => {
+const Header = ({ loggedIn, username, cpf, menu }: HeaderProps) => {
   const [searchValue, setSearchValue] = useState('');
 
   return (
@@ -22,7 +22,7 @@ const Header = ({ loggedIn, username, cpf }: HeaderProps) => {
           <GridHeader>
             <LogoContainer>
               <a href="/">
-                <img src={logo} alt="Logo" />
+                <img src="/images/logo_spcbrasil.png" alt="Logo" />
               </a>
             </LogoContainer>
             {loggedIn && (
@@ -50,6 +50,22 @@ const Header = ({ loggedIn, username, cpf }: HeaderProps) => {
           </GridHeader>
         </Container>
       </StyledHeader>
+      <StyledMenu>
+        <Container fluid>
+          <StyledNavList>
+            {
+              menu && menu.map((item, index) => (
+                <StyledLinkItem to={item.url} key={index}>
+                  <StyledListItem >
+                    {item.icon}
+                    <Text size={1}>{item.label}</Text>
+                  </StyledListItem>
+                </StyledLinkItem>
+              ))
+            }
+          </StyledNavList>
+        </Container>
+      </StyledMenu>
     </>
   );
 };
